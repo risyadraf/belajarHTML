@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>
+		Tugas 2 Formulir Survey
+	</title>
+
+	<style>
+
+		body {
+			background-color: #e2de0a;
+			font-family: Verdana;
+			text-align: center;
+		}
+		form {
+			background-color: #cabebe;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+		button {
+			background-color: #056ec4;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 40px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Survey Belanja Produk</h1>
+	<form id="form">
+		<div class="form-control">
+			<label for="name" id="label-name">Name</label>
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				kamu siapa?
+			</label>
+			<select name="role" id="role">
+				<option value="Siswa">Siswa</option>
+				<option value="Mahasiswa">Mahasiswa</option>
+				<option value="Propesional">
+					Pekerja
+				</option>
+				<option value="Lainnya">Lainnya</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Apakah kamu merekomendasikan survei ini kepada yang lain?
+			</label>
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Maybe</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>Selama tiga bulan terakhir kamu berbelanja barang apa saja?
+				<small>(Check all that apply)</small>
+			</label>
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">HandPhone</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">Komputer</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">Rumah</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Sembako</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Indomie</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">Saham</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Tanah</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Motor</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Mobil</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Roket</input></label>
+		</div>
+<div class="form-control">
+        <label>Dimana kamu belanja?
+            <small>(Check all that apply)</small>
+        </label>
+        <label for="inp-1">
+            <input type="checkbox"
+                name="inp">Tokopedia</input></label>
+        <label for="inp-2">
+            <input type="checkbox"
+                name="inp">Shoppe</input></label>
+        <label for="inp-3">
+            <input type="checkbox"
+                name="inp">Lazada</input></label>
+        <label for="inp-4">
+            <input type="checkbox"
+                name="inp">Toko Offline</input></label>
+        <label for="inp-5">
+            <input type="checkbox"
+                name="inp">Amazon</input></label>
+        <label for="inp-6">
+            <input type="checkbox"
+                name="inp">Alibaba</input></label>
+    </div>
+
+		<div class="form-control">
+			<label for="comment">
+				Tulis komentarmu jika ada
+			</label>
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+		<button type="submit" value="submit">Submit</button>
+	</form>
+</body>
+</html>
