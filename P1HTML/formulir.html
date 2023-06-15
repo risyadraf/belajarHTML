@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulir</title>
+  <style>
+    body {
+      background-color: lightblue;
+    }
+    
+    form {
+      width: 400px;
+      margin: 0 auto;
+      padding: 25px;
+      background-color: rgb(113, 201, 79);
+      border-radius: 10px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+      width: 80%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+    
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #5659e9;
+      color: rgb(245, 245, 245);
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .gender-container {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .form-title {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2 class="form-title">REGISTRASI</h2>
+    <label for="Fname">First Name:</label>
+    <input type="text" id="Fname" name="Fname" required>
+    <br>
+    <label for="Lname">Last Name:</label>
+    <input type="text" id="Lname" name="Lname" required>
+    <br>
+    <label for="Date">Date of Birth:</label>
+    <input type="text" name="Date" id="Date">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>
+    <p><small>Password harus terdiri dari setidaknya 8 karakter, termasuk setidaknya satu angka, satu huruf, dan satu simbol.</small></p>
+    <label for="gender">Gender:</label>
+    <div class="gender-container">
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </div>
+    <br>
+    <label for="phone">Phone Number</label>
+    <input type="text" id="Phone" name="Phone"required>
+    <br>
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" required style="width: 350px; height: 60px;"></textarea>
+    <br>
+    <div class="button-container">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+</html>
